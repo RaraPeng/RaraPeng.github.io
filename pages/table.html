@@ -4,13 +4,34 @@
 <head>
     <meta charset="utf-8">
     <title>table</title>
-    <!-- CSS Stylesheet-->
-    <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="http://flattyshadow.com/css/flattyshadow.css">
-    <!-- Javascript -->
-    <script type="text/javascript" src="http://flattyshadow.com/js/jquery.min.js"></script>
-    <script type="text/javascript" src="http://flattyshadow.com/js/flattyshadow.js"></script>
     <style type="text/css">
+    body {
+        margin: 0px;
+    }
+    
+    #container {
+        width: 900px;
+        margin: 0px auto;
+    }
+    
+    #header {
+        width: 100%;
+        height: 50px;
+        margin: 0px auto;
+    }
+    
+    #button a {
+        display: block;
+        width: 200px;
+        height: 30px;
+        float: right;
+        font-size: 18px;
+        text-align: center;
+        padding-top: 7px;
+        margin-top: 50px;
+        text-decoration: none;
+    }
+    
     caption {
         font-size: 25px;
         font-weight: bold;
@@ -33,7 +54,7 @@
     }
     
     table {
-        width: 60%;
+        width: 100%;
     }
     
     th {
@@ -47,11 +68,12 @@
     }
     
     td.ref {
-        font-size: 14px;
+        font-size: 16px;
         border-width: 0px;
         border-color: white;
         border-spacing: 0;
         padding: 0px;
+        text-align: right;
     }
     
     .row0 {
@@ -140,107 +162,102 @@
 </head>
 
 <body>
-    <!--<p align="center">
-        <iframe width="1500" height="1000" src="http://taqm.epa.gov.tw/taqm/tw/default.aspx"></iframe>
-    </p>-->
-    <p class="content">
-        <table class="epa" align="center">
-            <caption>細懸浮微粒(PM<sub>2.5</sub>)指標對照表與活動建議</caption>
-            <tr>
-                <th class="row0">指標等級</th>
-                <th class="row0">分類</th>
-                <th class="row0">PM<sub>2.5</sub> 濃度
-                    <br>(&#956;g/m<sup>3</sup>)</th>
-                <th class="row0">一般民眾活動建議</th>
-                <th class="row0">敏感性族群活動建議</th>
-            </tr>
-            <tr>
-                <th class="row1">1</th>
-                <td class="row1">低</td>
-                <td class="row1">0-11</td>
-                <td class="row_exp" rowspan="3">正常戶外活動。</td>
-                <td class="row_exp" rowspan="3">正常戶外活動。</td>
-            </tr>
-            <tr>
-                <th class="row2">2</th>
-                <td class="row2">低</td>
-                <td class="row2">12-23</td>
-            </tr>
-            <tr>
-                <th class="row3">3</th>
-                <td class="row3">低</td>
-                <td class="row3">24-35</td>
-            </tr>
-            <tr>
-                <th class="row4">4</th>
-                <td class="row4">中</td>
-                <td class="row4">36-41</td>
-                <td class="row_exp" rowspan="3">正常戶外活動。</td>
-                <td class="row_exp" rowspan="3">有心臟、呼吸道及心血管疾病的成人與孩童感受到癥狀時，應考慮減少體力消耗，特別是減少戶外活動。</td>
-            </tr>
-            <tr>
-                <th class="row5">5</th>
-                <td class="row5">中</td>
-                <td class="row5">42-47</td>
-            </tr>
-            <tr>
-                <th class="row6">6</th>
-                <td class="row6">中</td>
-                <td class="row6">48-53</td>
-            </tr>
-            <tr>
-                <th class="row7">7</th>
-                <td class="row7">高</td>
-                <td class="row7">54-58</td>
-                <td class="row_exp" rowspan="3">任何人如果有不適，如眼痛，咳嗽或喉嚨痛等，應該考慮減少戶外活動。</td>
-                <td class="row_exp" rowspan="3">
-                    <ol>
-                        <li> 有心臟、呼吸道及心血管疾病的成人與孩童，應減少體力消耗，特別是減少戶外活動。</li>
-                        <li> 老年人應減少體力消耗。</li>
-                        <li> 具有氣喘的人可能需增加使用吸入劑的頻率。</li>
-                    </ol>
-                </td>
-            </tr>
-            <tr>
-                <th class="row8">8</th>
-                <td class="row8">高</td>
-                <td class="row8">59-64</td>
-            </tr>
-            <tr>
-                <th class="row9">9</th>
-                <td class="row9">高</td>
-                <td class="row9">65-70</td>
-            </tr>
-            <tr>
-                <th class="row10">10</th>
-                <td class="row10">非常高</td>
-                <td class="row10">&#8805;71</td>
-                <td class="row_exp">任何人如果有不適，如眼痛，咳嗽或喉嚨痛等，應減少體力消耗，特別是減少戶外活動。</td>
-                <td class="row_exp">
-                    <ol>
-                        <li> 有心臟、呼吸道及心血管疾病的成人與孩童，以及老年人應避免體力消耗，特別是避免戶外活動。</li>
-                        <li>具有氣喘的人可能需增加使用吸入劑的頻率。</li>
-                    </ol>
-                </td>
-            </tr>
-        </table>
-        <table align="center">
-            <tr>
-                <td class="ref">
-                    (資料來源：<a href="http://taqm.epa.gov.tw/taqm/tw/default.aspx">行政院環境保護署－空氣品質監測網</a>)
-                </td>
-            </tr>
-        </table>
-    </p>
-    <p class="return">
-        <!-- Insert the code in Icons.txt file here-->
-        <div class="flatty_shadow" data-bg-color="#1abc9c" data-shadow-color="#16a085" data-icon-color="#ffffff" data-angle="42" data-depth="400" data-shape="50" data-bg-transparency="1" data-shadow-transparency="1" data-icon-transparency="1" data-pos-x="1000" data-pos-y="0" data-bg-size="80" data-icon-size="40">
-            <i class="fa fa-reply"></i>
+    <div id="container">
+        <div id="header">
+            <div id="button">
+                <a href="../index.html">Back to Homepage→</a>
+            </div>
         </div>
-        <script type="text/javascript">
-        flattyShadow();
-        </script>
-    </p>
+        <div class="content">
+            <table class="epa" align="center">
+                <caption>細懸浮微粒(PM<sub>2.5</sub>)指標對照表與活動建議</caption>
+                <tr>
+                    <th class="row0">指標等級</th>
+                    <th class="row0">分類</th>
+                    <th class="row0">PM<sub>2.5</sub> 濃度
+                        <br>(&#956;g/m<sup>3</sup>)</th>
+                    <th class="row0">一般民眾活動建議</th>
+                    <th class="row0">敏感性族群活動建議</th>
+                </tr>
+                <tr>
+                    <th class="row1">1</th>
+                    <td class="row1">低</td>
+                    <td class="row1">0-11</td>
+                    <td class="row_exp" rowspan="3">正常戶外活動。</td>
+                    <td class="row_exp" rowspan="3">正常戶外活動。</td>
+                </tr>
+                <tr>
+                    <th class="row2">2</th>
+                    <td class="row2">低</td>
+                    <td class="row2">12-23</td>
+                </tr>
+                <tr>
+                    <th class="row3">3</th>
+                    <td class="row3">低</td>
+                    <td class="row3">24-35</td>
+                </tr>
+                <tr>
+                    <th class="row4">4</th>
+                    <td class="row4">中</td>
+                    <td class="row4">36-41</td>
+                    <td class="row_exp" rowspan="3">正常戶外活動。</td>
+                    <td class="row_exp" rowspan="3">有心臟、呼吸道及心血管疾病的成人與孩童感受到癥狀時，應考慮減少體力消耗，特別是減少戶外活動。</td>
+                </tr>
+                <tr>
+                    <th class="row5">5</th>
+                    <td class="row5">中</td>
+                    <td class="row5">42-47</td>
+                </tr>
+                <tr>
+                    <th class="row6">6</th>
+                    <td class="row6">中</td>
+                    <td class="row6">48-53</td>
+                </tr>
+                <tr>
+                    <th class="row7">7</th>
+                    <td class="row7">高</td>
+                    <td class="row7">54-58</td>
+                    <td class="row_exp" rowspan="3">任何人如果有不適，如眼痛，咳嗽或喉嚨痛等，應該考慮減少戶外活動。</td>
+                    <td class="row_exp" rowspan="3">
+                        <ol>
+                            <li> 有心臟、呼吸道及心血管疾病的成人與孩童，應減少體力消耗，特別是減少戶外活動。</li>
+                            <li> 老年人應減少體力消耗。</li>
+                            <li> 具有氣喘的人可能需增加使用吸入劑的頻率。</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="row8">8</th>
+                    <td class="row8">高</td>
+                    <td class="row8">59-64</td>
+                </tr>
+                <tr>
+                    <th class="row9">9</th>
+                    <td class="row9">高</td>
+                    <td class="row9">65-70</td>
+                </tr>
+                <tr>
+                    <th class="row10">10</th>
+                    <td class="row10">非常高</td>
+                    <td class="row10">&#8805;71</td>
+                    <td class="row_exp">任何人如果有不適，如眼痛，咳嗽或喉嚨痛等，應減少體力消耗，特別是減少戶外活動。</td>
+                    <td class="row_exp">
+                        <ol>
+                            <li> 有心臟、呼吸道及心血管疾病的成人與孩童，以及老年人應避免體力消耗，特別是避免戶外活動。</li>
+                            <li>具有氣喘的人可能需增加使用吸入劑的頻率。</li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+            <table align="center">
+                <tr>
+                    <td class="ref">
+                        (資料來源：<a href="http://taqm.epa.gov.tw/taqm/tw/default.aspx">行政院環境保護署－空氣品質監測網</a>)
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
 </body>
 
 </html>
