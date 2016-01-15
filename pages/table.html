@@ -1,88 +1,247 @@
+翊雁 搜尋雲端硬碟 雲端硬碟 . 資料夾路徑 我的雲端硬碟 html5 html pages 新增 資料夾和檢視模式 我的雲端硬碟 與我共用 Google 相簿 近期存取 已加星號 垃圾桶 已使用 4 GB (共 17 GB) 升級儲存空間 名稱 擁有者 上次修改日期 檔案大小 table.html 我 2016年1月14日我 8 KB journal.html 我 2016年1月14日我 2 KB 下載雲端硬碟 PC 版 已關閉
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=7">
-    <meta:renderer></meta:renderer>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta:author></meta:author>
-    <meta name="keywords" content="Keyword 1,Keyword 2">
-    <meta name="description" content="description">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="apple-touch-icon" href="favicon.png">
-    <title>Table</title>
+    <meta charset="utf-8">
+    <title>table</title>
+    <!-- CSS Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://flattyshadow.com/css/flattyshadow.css">
+    <!-- Javascript -->
+    <script type="text/javascript" src="http://flattyshadow.com/js/jquery.min.js"></script>
+    <script type="text/javascript" src="http://flattyshadow.com/js/flattyshadow.js"></script>
+    <style type="text/css">
+    caption {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    table.epa,
+    th,
+    td {
+        border-width: 1px;
+        border-color: black;
+        border-style: dotted;
+        border-spacing: 1;
+        font-family: arial;
+        vertical-align: middle;
+    }
+    
+    table.ref {
+        border-width: 0px;
+        background-color: white;
+    }
+    
+    table {
+        width: 60%;
+    }
+    
+    th {
+        font-size: 18px;
+        padding: 10px;
+    }
+    
+    td {
+        font-size: 16px;
+        padding: 10px;
+    }
+    
+    td.ref {
+        font-size: 14px;
+        border-width: 0px;
+        border-color: white;
+        border-spacing: 0;
+        padding: 0px;
+    }
+    
+    .row0 {
+        text-align: center;
+        background-color: #DDDDDD;
+        height: 50px;
+    }
+    
+    .row1 {
+        text-align: center;
+        background-color: #9CFF9C;
+        height: 30px;
+    }
+    
+    .row2 {
+        text-align: center;
+        background-color: #31FF00;
+        height: 30px;
+    }
+    
+    .row3 {
+        text-align: center;
+        background-color: #31CF00;
+        height: 30px;
+    }
+    
+    .row4 {
+        text-align: center;
+        background-color: #FFFF00;
+        height: 30px;
+    }
+    
+    .row5 {
+        text-align: center;
+        background-color: #FFCF00;
+        height: 30px;
+    }
+    
+    .row6 {
+        text-align: center;
+        background-color: #FF9A00;
+        height: 30px;
+    }
+    
+    .row7 {
+        text-align: center;
+        background-color: #FF6464;
+        height: 30px;
+    }
+    
+    .row8 {
+        text-align: center;
+        background-color: #FF0000;
+        height: 30px;
+    }
+    
+    .row9 {
+        text-align: center;
+        background-color: #990000;
+        height: 30px;
+    }
+    
+    .row10 {
+        text-align: center;
+        background-color: #CE30FF;
+        height: 90px;
+    }
+    
+    .row_exp {
+        text-align: left;
+        background-color: white;
+        width: 300px;
+    }
+    
+    .row_ref {
+        text-align: left;
+        background-color: white;
+        border-color: white;
+        border-width: 0px;
+    }
+    
+    a {
+        color: blue;
+    }
+    </style>
 </head>
 
 <body>
-    <!--<table width="400" border="1" cellpadding="10" cellspacing="5" bgcolor="#FFF2CC">
-        <tr align="center">
-            <td></td>
-            <th>Monday</th>
-            <th>Tuesday</th>
-            <th>Wednesday</th>
-        </tr>
-        <tr align="center">
-            <th>9-10</th>
-            <td colspan="2">Art</td>
-            <td>Sport</td>
-        </tr>
-        <tr align="center">
-            <th>10-11</th>
-            <td>Math</td>
-            <td>Chinese</td>
-            <td rowspan="2">HTML</td>
-        </tr>
-        <tr align="center">
-            <th>11-12</th>
-            <td>Music</td>
-            <td>Science</td>
-        </tr>
-    </table>-->
-    <table width="800" border="0" cellpadding="10" cellspacing="1">
-        <tr align="center">
-            <th>指標等級</th>
-            <th>1</th>
-            <th>2</th>
-            <th>3</th>
-            <th>4</th>
-            <th>5</th>
-            <th>6</th>
-            <th>7</th>
-            <th>8</th>
-            <th>9</th>
-            <th>10</th>
-        </tr>
-        <tr align="center">
-            <th>分類</th>
-            <td>低</td>
-            <td>低</td>
-            <td>低</td>
-            <td>中</td>
-            <td>中</td>
-            <td>中</td>
-            <td>高</td>
-            <td>高</td>
-            <td>高</td>
-            <td>非常高</td>
-        </tr>
-        <tr align="center">
-            <th>10-11</th>
-            <td>Math</td>
-            <td>Chinese</td>
-            <td rowspan="2">HTML</td>
-        </tr>
-        <tr align="center">
-            <th>11-12</th>
-            <td>Music</td>
-            <td>Science</td>
-        </tr>
-        <tr align="center">
-            <th>11-12</th>
-            <td>Music</td>
-            <td>Science</td>
-        </tr>
-    </table>
+    <!--<p align="center">
+        <iframe width="1500" height="1000" src="http://taqm.epa.gov.tw/taqm/tw/default.aspx"></iframe>
+    </p>-->
+    <p class="content">
+        <table class="epa" align="center">
+            <caption>細懸浮微粒(PM<sub>2.5</sub>)指標對照表與活動建議</caption>
+            <tr>
+                <th class="row0">指標等級</th>
+                <th class="row0">分類</th>
+                <th class="row0">PM<sub>2.5</sub> 濃度
+                    <br>(&#956;g/m<sup>3</sup>)</th>
+                <th class="row0">一般民眾活動建議</th>
+                <th class="row0">敏感性族群活動建議</th>
+            </tr>
+            <tr>
+                <th class="row1">1</th>
+                <td class="row1">低</td>
+                <td class="row1">0-11</td>
+                <td class="row_exp" rowspan="3">正常戶外活動。</td>
+                <td class="row_exp" rowspan="3">正常戶外活動。</td>
+            </tr>
+            <tr>
+                <th class="row2">2</th>
+                <td class="row2">低</td>
+                <td class="row2">12-23</td>
+            </tr>
+            <tr>
+                <th class="row3">3</th>
+                <td class="row3">低</td>
+                <td class="row3">24-35</td>
+            </tr>
+            <tr>
+                <th class="row4">4</th>
+                <td class="row4">中</td>
+                <td class="row4">36-41</td>
+                <td class="row_exp" rowspan="3">正常戶外活動。</td>
+                <td class="row_exp" rowspan="3">有心臟、呼吸道及心血管疾病的成人與孩童感受到癥狀時，應考慮減少體力消耗，特別是減少戶外活動。</td>
+            </tr>
+            <tr>
+                <th class="row5">5</th>
+                <td class="row5">中</td>
+                <td class="row5">42-47</td>
+            </tr>
+            <tr>
+                <th class="row6">6</th>
+                <td class="row6">中</td>
+                <td class="row6">48-53</td>
+            </tr>
+            <tr>
+                <th class="row7">7</th>
+                <td class="row7">高</td>
+                <td class="row7">54-58</td>
+                <td class="row_exp" rowspan="3">任何人如果有不適，如眼痛，咳嗽或喉嚨痛等，應該考慮減少戶外活動。</td>
+                <td class="row_exp" rowspan="3">
+                    <ol>
+                        <li> 有心臟、呼吸道及心血管疾病的成人與孩童，應減少體力消耗，特別是減少戶外活動。</li>
+                        <li> 老年人應減少體力消耗。</li>
+                        <li> 具有氣喘的人可能需增加使用吸入劑的頻率。</li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <th class="row8">8</th>
+                <td class="row8">高</td>
+                <td class="row8">59-64</td>
+            </tr>
+            <tr>
+                <th class="row9">9</th>
+                <td class="row9">高</td>
+                <td class="row9">65-70</td>
+            </tr>
+            <tr>
+                <th class="row10">10</th>
+                <td class="row10">非常高</td>
+                <td class="row10">&#8805;71</td>
+                <td class="row_exp">任何人如果有不適，如眼痛，咳嗽或喉嚨痛等，應減少體力消耗，特別是減少戶外活動。</td>
+                <td class="row_exp">
+                    <ol>
+                        <li> 有心臟、呼吸道及心血管疾病的成人與孩童，以及老年人應避免體力消耗，特別是避免戶外活動。</li>
+                        <li>具有氣喘的人可能需增加使用吸入劑的頻率。</li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+        <table align="center">
+            <tr>
+                <td class="ref">
+                    (資料來源：<a href="http://taqm.epa.gov.tw/taqm/tw/default.aspx">行政院環境保護署－空氣品質監測網</a>)
+                </td>
+            </tr>
+        </table>
+    </p>
+    <p class="return">
+        <!-- Insert the code in Icons.txt file here-->
+        <div class="flatty_shadow" data-bg-color="#1abc9c" data-shadow-color="#16a085" data-icon-color="#ffffff" data-angle="42" data-depth="400" data-shape="50" data-bg-transparency="1" data-shadow-transparency="1" data-icon-transparency="1" data-pos-x="1000" data-pos-y="0" data-bg-size="80" data-icon-size="40">
+            <i class="fa fa-reply"></i>
+        </div>
+        <script type="text/javascript">
+        flattyShadow();
+        </script>
+    </p>
 </body>
 
 </html>
