@@ -1,0 +1,161 @@
+body {
+    margin: 0px;
+    font-family: '微軟正黑體', sans-serif;
+}
+
+#container {
+    width: 900px;
+    margin: 0px auto;
+    position: relative;
+}
+
+#nav {
+    position: fixed;
+}
+
+ul li {
+    float: left;
+    display: block;
+    width: 225px;
+    background-color: #9A5927;
+    color: #F9F59A;
+    font-size: 20px;
+    font-weight: bolder;
+    line-height: 50px;
+    text-align: center;
+}
+
+#logo {
+    background-color: white;
+}
+
+ul li a {
+    color: #F9F59A;
+    text-decoration: none;
+}
+
+ul li ul {
+    display: none;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li:hover {
+    background-color: #BA7947;
+    color: #9A5927;
+}
+
+ul li ul li:hover {
+    background-color: #F9F59A;
+    color: #9A5927;
+}
+
+#bk_im {
+    width: 900px;
+    display: block;
+    margin: auto;
+}
+
+#bk_im2 {
+    display: block;
+    margin: auto;
+}
+
+#bk h4 {
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#bk p {
+    margin: 20px;
+    font-size: 16px;
+}
+
+#good {
+    width: 290px;
+    height: 550px;
+    background-color: #F9F59A;
+    float: left;
+}
+
+#bad,
+#feature {
+    width: 290px;
+    height: 550px;
+    margin-left: 15px;
+    background-color: #F9F59A;
+    float: left;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 20px;
+    line-height: 50px;
+    font-weight: bold;
+    color: #9A5927;
+    border-style: dashed;
+    border-color: #9A5927;
+    border-width: 3px;
+}
+
+#good img,
+#bad img,
+#feature img {
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    box-shadow: 4px 4px 12px -2px;
+}
+
+#content div h4 {
+    text-align: center;
+    font-size: 18px;
+    text-decoration: underline;
+    padding: 10px;
+}
+
+#content div p {
+    padding: 10px 20px 10px 20px;
+}
+
+.devide {
+    clear: both;
+}
+
+.circle1 {
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    background-color: #036D58;
+    border-radius: 50%;
+    box-shadow: 2px 2px 1px #888888;
+    position: fixed;
+    right: 100px;
+    bottom: 5px;
+}
+
+.circle1 a img {
+    width: 32px;
+    margin-left: 11px;
+    margin-top: 9px;
+}
+
+.circle2 {
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    background-color: #036D58;
+    border-radius: 50%;
+    box-shadow: 2px 2px 1px #888888;
+    position: fixed;
+    right: 40px;
+    bottom: 5px;
+}
+
+.circle2 a img {
+    margin-left: 12px;
+    margin-top: 7px;
+}
