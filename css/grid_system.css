@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'rwd';
+    src: url(../fonts/glyphicons-halflings-regular.woff);
+}
+
 body {
     font-family: 'rwd', sans-serif;
 }
