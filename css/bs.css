@@ -1,1 +1,23 @@
+.btn-xl a {
+    color: white;
+}
 
+.timeline-image h4 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.thumbnail {
+    background-color: #f7f7f7;
+    border-width: 0px;
+    border-color: #f7f7f7;
+}
+
+.img-circle {
+    border: 8px solid white;
+}
+
+.thumbnail img,
+div {
+    text-align: center;
+}
