@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="../js/guessNum.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/guessNum.css">
+    <title>Guess Number!!</title>
+</head>
+
+<body onload="Start()">
+    <div class="container">
+        <div class="header">
+            <h1>猜數字遊戲</h1>
+        </div>
+        <div class="content">
+            <h3>請輸入四個不重複的數字(0~9)</h3>
+            <form name="gNum">
+                <input type="TEXT" class="type" name="guess" size="10" maxlength="4">
+            </form>
+            <form>
+                <input type="BUTTON" class="clk" name="start" value="猜猜數字" onclick="Check()">
+            </form>
+            <form name="chk">
+                <input type="TEXT" class="type" name="ans" size="10" disabled="">
+            </form>
+            <form>
+                <input type="BUTTON" class="clk" name="restart" value="重設答案" onclick="ReStart()">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
